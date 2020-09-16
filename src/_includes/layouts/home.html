@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <article class="flex h-screen">
+      <div class="m-auto text-center">
+        <h1 class="font-bold">
+          {{ intro.eyebrow }}
+        </h1>
+        <div>
+          {{ content | safe }}
+        </div>
+      </div>
+  </article>
+{% endblock %}

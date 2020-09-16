@@ -1,0 +1,90 @@
+@tailwind base;
+
+body {
+    opacity: 1;
+}
+
+html {
+    font-size: 18px
+}
+
+h1 {
+    @apply text-6xl;
+    @apply font-bold;
+}
+h2 {
+    @apply text-4xl;
+    @apply font-bold;
+}
+h3 {
+    @apply text-2xl;
+    @apply font-bold;
+}
+
+a.link {
+    @apply text-orange;
+}
+
+a.link:hover {
+    @apply underline;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+.btn-orange {
+    @apply bg-orange text-white;
+}
+.btn-orange:hover {
+    @apply bg-orange-dark;
+}
+
+[aria-current="page"],
+.menu-item:hover {
+    border-bottom: 2px solid #ea8b34;
+}
+
+.contact-form-slider {
+    z-index: 1000;
+    top: 5%;
+    left: 10%;
+}
+
+@media (min-width: 768px) {
+    .swiper-slide img {
+        min-height: 600px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    color: #fff !important;
+}
+
+.banner {
+    position: relative;
+}
+
+.lines-slider {
+    position: absolute;
+    z-index: 1000;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+}
+
+.lines {
+    position: relative;
+    top: 2px;
+}
+
+.lines-inverted {
+    position: relative;
+    top: -2px;
+    transform: rotate(180deg);
+}
+
+@tailwind components;
+@tailwind utilities;
