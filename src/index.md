@@ -5,5 +5,3 @@ layout: 'layouts/home.html'
 intro:
   eyebrow: 'Douma Dakdekkers'
 ---
-
-Douma Dakdekkers

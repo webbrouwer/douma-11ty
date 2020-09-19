@@ -1,0 +1,34 @@
+            <article role="banner" class="slider">
+
+                <div class="md:hidden md:container md:mx-auto mx-4 pt-10 pb-12 py-8">
+                    <h2 class="leading-9"><span class="text-green">Dakbedekking</span> & onderhoudsbedrijf</h2>
+                    <p>Als u op zoek bent naar een dakdekker in de regio Arnhem? Dan moet u bij Douma Dakdekkers zijn!</p>
+                    <a href="#" class="btn btn-orange inline-block mt-4">Contact opnemen</a>
+                </div>
+
+                <!-- Swiper -->
+                <div class="hiddden md:block swiper-container">
+
+                    {% include "partials/slider-contact.html" %}
+
+                    </div> <!-- .swiper -->
+
+                    <div class="lines-slider">
+                        <img src="../img/lines.svg" alt="">
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ slider.slide01 }}" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ slider.slide02 }}" alt="">
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div> <!-- /swiper -->
+
+            </article>
