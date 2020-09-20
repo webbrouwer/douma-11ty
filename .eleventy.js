@@ -11,10 +11,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./_tmp/style.css");
 
-    // Set directories to pass through to the dist folder
+  // Set directories to pass through to the dist folder
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
   eleventyConfig.addPassthroughCopy('./src/images/');
   eleventyConfig.addPassthroughCopy('./src/js/');
+
+  // Swiper slider
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/swiper/swiper-bundle.min.css": "assets/swiper.min.css",
+    "node_modules/swiper/swiper-bundle.min.js": "assets/swiper.min.js"
+  });
 
   // Add shortcode for versions
   eleventyConfig.addShortcode("version", function () {

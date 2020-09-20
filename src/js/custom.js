@@ -1,3 +1,6 @@
+/*
+ * Open / close mobile menu
+ */
 var isOpen = false;
 var menu = document.querySelector('#menu-js');
 var menuButton = document.querySelector('#mobileMenuButton-js');
@@ -32,3 +35,21 @@ menuButton.addEventListener('click', function(event) {
         openMenu();
     }
 }, true);
+
+/*
+ * Swiper slider
+ */
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+})

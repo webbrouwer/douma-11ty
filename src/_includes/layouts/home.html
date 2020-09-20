@@ -1,16 +1,36 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-  <article class="flex h-screen">
-      <div class="m-auto text-center">
-        <h1 class="font-bold">
-          {{ intro.eyebrow }}
-        </h1>
-        <div>
 
-            {% include "partials/slider.html" %}
+    {% include "partials/slider.html" %}
 
-        </div>
-      </div>
-  </article>
+            <article class="container mx-auto mt-4 md:grid px-8">
+                <div class="grid">
+                    <div class="md:w-2/3">
+                        <h2><span class="text-green">Douma</span> Dakdekkers</h2>
+                        <p class="text-gray">Als u op zoek bent naar een dakdekker in de regio Arnhem, bent u bij Kas Douma dakbedekking en onder- houdsbedrijf aan het juiste adres! Wij zijn een dakdekkersbedrijf met een mooie geschiedenis in Arnhem en omstreken. Ons bedrijf doet grote en kleine projecten, zowel nieuwbouw als renovatie. Wij werken graag met particulieren en zakelijke klanten, we bieden hoogwaardige kwaliteit en een brede dienstverlening met uitstekende service. Voor de beste dakdekkers moet u bij Douma zijn!</p>
+                    </div>
+                </div>
+
+                <div class="md:flex items-top justify-between py-8">
+                    <div class="md:w-1/3 md:mr-4 p-8 mt-4 bg-gray text-white rounded-tl-lg rounded-br-lg">
+                        <h3>Lekkage</h3>
+                        <p class="mt-4">Heeft u lekkage? Wacht nooit te lang met het herstellen van daklekkage. Hoe langer het duurt, hoe groter de schade kan worden. U kunt in Arnhem en omstreken rekenen op een snelle service van ons dakdekkersbedrijf. Ook op zon- en feestdagen staan wij voor u klaar. Aarzel dus niet te lang en neem bij daklekkage direct contact op met uw dakspecialist uit de regio Arnhem!</p>
+                    </div>
+                    <div class="md:w-1/3 md:mx-2 md:mt:0 mt-4 p-8 bg-gray text-white rounded-tl-lg rounded-br-lg">
+                        <h3>Garantie</h3>
+                        <p class="mt-4">Kas Douma dakbedekking en onderhoudsbedrijf geeft op alle bitumineuze daken en zinkwerk 10 jaar garantie op de materiaal en verwerking. Op alle pannendaken ontvangt u zelfs 15 jaar garantie. Hiervoor ontvangt u bij oplevering een certificaat.</p>
+                    </div>
+                    <div class="md:w-1/3 md:ml-4 md:mt:0 mt-4 p-8 bg-gray text-white rounded-tl-lg rounded-br-lg">
+                        <h3><span class="text-green">Gratis</span> inspectie</h3>
+                        <p class="mt-4">Daken zijn pas echt waterdicht, als ze perfect zijn uitgevoerd. Met het juiste dakdichtingssysteem en door betrouwbare vakmensen. Bovendien moet een dak goed onderhouden blijven. Zeker voor uw dak is dat van groot belang, want er schuilt een kapitaal aan uitrusting en dure goederen onder. U wil dus geen risico lopen.</p>
+                    </div>
+                </div>
+            </article>
+
+{% include "partials/our-services.html" %}
+{% include "partials/why-douma.html" %}
+{% include "partials/history.html" %}
+{% include "partials/portfolio.html" %}
+
 {% endblock %}
