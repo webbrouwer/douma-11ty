@@ -4,6 +4,8 @@ const htmlmin = require("html-minifier");
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
+const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
+
 module.exports = function (eleventyConfig) {
   // Add filters
   eleventyConfig.addFilter('dateFilter', dateFilter);
@@ -25,6 +27,11 @@ module.exports = function (eleventyConfig) {
   // Add shortcode for versions
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
+  });
+
+  // Returns work items, sorted by display order
+  eleventyConfig.addCollection('diensten', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/diensten/*.md'));
   });
 
   // Returns a collection of blog posts in reverse date order
