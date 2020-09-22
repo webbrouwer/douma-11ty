@@ -22,24 +22,29 @@
 
             <article class="container pt-8 px-8 mx-auto">
 
-                {{ content | safe }}
+                <div class="container mx-auto mt-4 md:grid md:grid-cols-3 py-4 gap-8">
 
-                <a href="{{ button.link }}" class="btn btn-orange mt-4 inline-block">{{ button.text }}</a>
+                    {% for item in collections.diensten %}
 
-
-                <!-- todo: insert images -->
-                <div class="grid grid-cols-2 gap-4 mt-12">
-                    <div>
-                        <img src="../img/roof2-1.jpg" class="rounded-tl-lg rounded-br-lg" alt="">
+                    <div class="my-4 rounded-tl-lg rounded-br-lg overflow-hidden">
+                        <div class="relative pb-2/3">
+                            <a href="{{ item.url }}" title="Ga naar {{ item.data.title }}">
+                                <img class="absolute h-full w-full object-cover" src="{{ item.data.hero.image }}" alt="{{ item.data.hero.imageAlt }}">
+                            </a>
+                        </div>
+                        <div class="p-4 bg-gray text-white">
+                            <a href="{{ item.url }}" title="Ga naar {{ item.data.title }}"><h3 class="text-center">{{ item.data.title }}</h3></a>
+                            <p class="py-2 truncate">{{ item.data.summary }}</p>
+                            <div class="py-4 text-center ">
+                                <a href="{{ item.url }}" class="btn btn-orange" title="Ga naar {{ item.data.title }}">Lees meer</a>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="../img/roof2-0.jpg" class="rounded-tl-lg rounded-br-lg" alt="">
-                    </div>
+
+                    {% endfor %}
+
                 </div>
 
             </article>
-
-{% include "partials/breakdown-service.html" %}
-{% include "partials/why-douma.html" %}
 
 {% endblock %}
