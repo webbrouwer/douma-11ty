@@ -13,9 +13,9 @@ hero:
 
 <h2><span class="text-green">Dakdekker</span> in omgeving Arnhem gezocht?</h2>
 
-<p>De dakdekkers van Douma-Dakdekkers kunnen alle werkzaamheden rondom uw dak uitvoeren. Onze specialiteiten:</p>
+De dakdekkers van Douma-Dakdekkers kunnen alle werkzaamheden rondom uw dak uitvoeren. Onze specialiteiten:
 
-<ul class="list-disc list-inside mt-4">
+<ul class="list-disc list-inside my-4">
     <li>Lekkages voorkomen</li>
     <li>Lekkages repareren</li>
     <li>Lood en zinkwerk aanbrengen</li>
@@ -25,8 +25,9 @@ hero:
     <li>Noodreparaties</li>
 </ul>
 
-<p class="mt-4">Dus heeft u dringend een dakdekker nodig in of nabij Arnhem? Neem dan gelijk contact met ons op. In de meeste gevallen zijn wij binnen 1 uur ter plaatse. Tevens verzorgen wij een gratis dakinspectie. De scherpste tarieven, snel ter plaatse en perfecte kwaliteit, wat wilt u nog meer?</p>
+Dus heeft u dringend een dakdekker nodig in of nabij Arnhem? Neem dan gelijk contact met ons op. In de meeste gevallen zijn wij binnen 1 uur ter plaatse. Tevens verzorgen wij een gratis dakinspectie. De scherpste tarieven, snel ter plaatse en perfecte kwaliteit, wat wilt u nog meer?
 
 <h3 class="mt-8">Bent u benieuwd naar onze service?</h3>
 
-<p>Dakdekker in Arnhem nodig? Of wilt u graag meer informatie over de diensten en producten die wij leveren? Neem dan direct contact met ons op.</p>
+Dakdekker in Arnhem nodig?
+Of wilt u graag meer informatie over de diensten en producten die wij leveren? Neem dan direct contact met ons op.

@@ -34,6 +34,11 @@ module.exports = function (eleventyConfig) {
     return sortByDisplayOrder(collection.getFilteredByGlob('./src/diensten/*.md'));
   });
 
+  // Returns usps, sorted by display order
+  eleventyConfig.addCollection('usps', collection => {
+    return sortByDisplayOrder(collection.getFilteredByGlob('./src/usps/*.md'));
+  });
+
   // Returns a collection of blog posts in reverse date order
   eleventyConfig.addCollection('blog', collection => {
     return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
