@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/dienst.html",
+  "permalink": "/diensten/{{ title | slug }}/index.html"
+}
