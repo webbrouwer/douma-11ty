@@ -2,9 +2,88 @@
 
 {% block content %}
 
-<article class="flex h-screen">
-    <div class="m-auto">
-        {{ content | safe }}
+{% include "partials/page-header.html" %}
+
+{% include "partials/page-intro.html" %}
+
+<article class="container mx-auto mt-4 md:grid py-4 px-8">
+    <div class="grid py-8">
+        <div class="md:w-2/3">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>
+
+<div class="lines">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1412.11 67.3"><g data-name="Laag 2"><g data-name="Laag 1"><path fill="#4d4d4d" d="M1278.68 63.99l-46.53-44-43.73 44H4.11v3.31h1408v-3.31h-133.43z"/><path d="M1283.92 48L1233.84.86a.27.27 0 00-.08-.07l-.16-.14-.07-.05-.19-.13h-.08l-.2-.11h-.09l-.19-.08h-.11l-.18-.06H1232.19L1232 0h-1.35l-.17.06-.11.05-.17.08-.11.06-.18.11h-.08l-.21.16-.24.22-45.14 47.86L.09 50.87H0v6.29h.14l1185.48-2a3.17 3.17 0 002.29-1l.09-.16 43.8-46.39 48.7 45.81a.27.27 0 01.08.07l.12.1.12.09.12.08.14.09.12.07.15.07h.13l.15.06H1412V48z" fill="#ee8e35"/><path d="M1278.36 58.82l-44.49-41.91-.11-.1-.13-.11-.12-.08-.14-.1-.13-.07-.14-.08-.14-.06-.14-.06-.15-.05H1231.18a.76.76 0 00-.16 0h-.14l-.15.05-.14.05h-.15a.61.61 0 01-.14.07l-.13.07-.14.09-.13.08-.13.1-.12.09-.12.12-.11.1-41 43.06L.24 60.56H0v6.26a2 2 0 00.24 0l1189.51-.48h.93l.2-.07h.1l.21-.1.14-.08.2-.12.09-.07.16-.12.09-.08.14-.14 39.78-41.77L1275 64.27a.27.27 0 00.08.07 1.27 1.27 0 00.12.1l.12.1.12.08.14.08.12.07.15.07.12.06.16.06H1412v-6.14z" fill="#82a84d"/></g></g></svg>
+</div>
+<article class="px-8 pt-10 pb-12 bg-gray text-center">
+
+        <h2 class="text-white"><span class="text-green">Douma's</span> historie</h2>
+
+        <div class="md:grid md:grid-cols-3 align-top mt-8 gap-8">
+
+            <div class="p-8 bg-white text-gray rounded-tl-lg rounded-br-lg">
+                <h3 class="text-green">1929</h3>
+                <p class="mt-4">Het bedrijf werd opgericht. De 1e generatie Hendrik Douma meldde zich in 1929 bij de Kamer van Koophandel onder de naam Douma Loodgieters en legden de basis voor een respectabel bedrijf.</p>
+            </div>
+            <div class="p-8 bg-white text-gray rounded-tl-lg rounded-br-lg">
+                <h3 class="text-green">1955</h3>
+                <p class="mt-4">Generatie op generatie. In 1955 nam Kas Douma sr. het bedrijf over van Hendrik Douma, de diensten werden uitgebreid met dak werkzaamheden.</p>
+            </div>
+            <div class="p-8 bg-white text-gray rounded-tl-lg rounded-br-lg">
+                <h3 class="text-green">2012</h3>
+                <p class="mt-4">Vol vertrouwen, na jaren van scholing en werkervaring te hebben opgedaan bij zijn vader en opa, meldde de vierde generatie Kas Douma jr. zich in 2012 bij de Kamer van Koophandel onder de naam Kas Douma Dakbedekking & Onderhoudsbedrijf.</p>
+            </div>
+
+             <div class="bg-white text-gray rounded-tl-lg rounded-br-lg overflow-hidden">
+                <div class="relative pb-2/3">
+                    <img class="absolute h-full w-full object-cover object-top" src="../img/Kas-douma-over-ons-douma-sr-1976.png" alt="">
+                </div>
+                <div class="p-4">
+                    <h4 class="text-center">Douma Sr. aan het werk in 1976</h4>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray rounded-tl-lg rounded-br-lg overflow-hidden">
+                <div class="relative pb-2/3">
+                    <img class="absolute h-full w-full object-cover" src="../img/Kas-douma-over-ons-douma-sr-1979.jpg" alt="">
+                </div>
+                <div class="p-4">
+                    <h4 class="text-center">Wegens succes bouwt Douma Sr. zijn eigen bedrijfspand in 1979</h4>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray rounded-tl-lg rounded-br-lg overflow-hidden">
+                <div class="relative pb-2/3">
+                    <img class="absolute h-full w-full object-cover" src="../img/Kas-douma-over-ons-werkzaamheden-uitbreiden.jpg" alt="">
+                </div>
+                <div class="p-4">
+                    <h4 class="text-center">Douma Sr. breidt zijn werkzaamheden uit</h4>
+                </div>
+            </div>
+
+        </div>
+</article>
+<div class="lines-inverted">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1412.11 67.3"><g data-name="Laag 2"><g data-name="Laag 1"><path fill="#4d4d4d" d="M1278.68 63.99l-46.53-44-43.73 44H4.11v3.31h1408v-3.31h-133.43z"/><path d="M1283.92 48L1233.84.86a.27.27 0 00-.08-.07l-.16-.14-.07-.05-.19-.13h-.08l-.2-.11h-.09l-.19-.08h-.11l-.18-.06H1232.19L1232 0h-1.35l-.17.06-.11.05-.17.08-.11.06-.18.11h-.08l-.21.16-.24.22-45.14 47.86L.09 50.87H0v6.29h.14l1185.48-2a3.17 3.17 0 002.29-1l.09-.16 43.8-46.39 48.7 45.81a.27.27 0 01.08.07l.12.1.12.09.12.08.14.09.12.07.15.07h.13l.15.06H1412V48z" fill="#ee8e35"/><path d="M1278.36 58.82l-44.49-41.91-.11-.1-.13-.11-.12-.08-.14-.1-.13-.07-.14-.08-.14-.06-.14-.06-.15-.05H1231.18a.76.76 0 00-.16 0h-.14l-.15.05-.14.05h-.15a.61.61 0 01-.14.07l-.13.07-.14.09-.13.08-.13.1-.12.09-.12.12-.11.1-41 43.06L.24 60.56H0v6.26a2 2 0 00.24 0l1189.51-.48h.93l.2-.07h.1l.21-.1.14-.08.2-.12.09-.07.16-.12.09-.08.14-.14 39.78-41.77L1275 64.27a.27.27 0 00.08.07 1.27 1.27 0 00.12.1l.12.1.12.08.14.08.12.07.15.07.12.06.16.06H1412v-6.14z" fill="#82a84d"/></g></g></svg>
+</div>
+
+<article class="container mx-auto mt-4 md:grid md:grid-cols-3 gap-8 py-8 px-8">
+    <div class="md:col-span-2">
+        <h2 class="pb-4"><span class="text-green">Kas Douma</span><br>Dakbeddeking en onderhoudsbedrijf</h2>
+        <p class="text-gray pb-4">Als u op zoek bent naar een dakdekker in de regio Arnhem, dan moet u bij Kas Douma dakbeddeking en onderhoudsbedrijf zijn! Wij zijn een dakdekkersbedrijf met een mooie geschiedenis in Arnhem en omstreken. Ons bedrijf doet grote en kleine projecten,zowel nieuwbouw als renovatie. Voor zakelijke en particuliere relaties. Wij bieden een hoogwaardige kwaliteit en een brede dienstverlening met uitstekende service.</p>
+    </div>
+    <div class="md:col-span-1">
+        <div class="my-4 bg-gray text-white rounded-tl-lg rounded-br-lg overflow-hidden">
+             <div class="relative pb-2/3">
+                <img class="absolute h-full w-full object-cover object-top" src="../img/douma-dakdekkers-over-ons-kas-douma.png" alt="">
+            </div>
+            <div class="p-4">
+                <h3 class="text-center">Kas Douma</h3>
+                <p class="py-2 text-center">Eigenaar van Kas Douma Dakbeddeking en onderhoudsbedrijf</p>
+            </div>
+        </div>
     </div>
 </article>
 

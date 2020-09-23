@@ -5,5 +5,8 @@ metaDesc: 'Diensten van Douma Dakdekker - Uw dakdekker in de regio Arnhem'
 button:
   text: 'Tel: 06 - 55 88 70 64'
   link: 'mailto:+310655887064'
+hero:
+  image: '/images/slider/2.jpg'
+  imageAlt: 'Altag image'
 layout: 'layouts/diensten.html'
 ---
