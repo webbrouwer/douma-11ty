@@ -26,6 +26,7 @@ module.exports = {
           dark: '#D27D2E',
         },
         green: '#82a84d',
+        lightgray: '#f1f1f1',
       },
       borderRadius: {
         'lg': '2rem',

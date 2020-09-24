@@ -5,13 +5,13 @@
 ### 1. Clone this Repository
 
 ```
-git clone 'url' my-website
+git clone 'url'
 ```
 
 ### 2. Navigate to the directory
 
 ```
-cd my-website
+cd douma-11ty
 ```
 
 ### 3. Install dependencies
