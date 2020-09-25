@@ -16,16 +16,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./_tmp/style.css");
 
-  // Add favicon
-  eleventyConfig.addPassthroughCopy('favicon.ico')
-  eleventyConfig.addPassthroughCopy('./src/images/logo');
-
   // Add navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+  // Form handling
+  eleventyConfig.addPassthroughCopy('./src/form-handling.php');
+
   // Set directories to pass through to the dist folder
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
-  eleventyConfig.addPassthroughCopy('./src/images/');
+  eleventyConfig.addPassthroughCopy('./src/images/*');
   eleventyConfig.addPassthroughCopy('./src/js/');
 
   // Swiper slider

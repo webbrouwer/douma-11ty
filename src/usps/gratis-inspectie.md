@@ -1,7 +1,7 @@
 ---
 title: ''
 titlegreen: 'Gratis '
-titletwee: 'inspectie' 
+titletwee: 'inspectie'
 summary: 'Wij ontdekken snel de risicofactoren en kunnen de vochtgevoelige plekken op uw dak onmiddelijk aanwijzen: dakranden, naadverbindingen, dakdoorbrekingen, blazen, scheuren.'
 displayOrder: 3
 icon: '<svg class="h-16 w-16 inline-block text-center text-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><defs><style>.cls-1{fill:#82a84d;}.cls-2{fill:#fff;}</style></defs><g id="Laag_2" data-name="Laag 2"><g id="Laag_1-2" data-name="Laag 1"><circle class="cls-1" cx="45" cy="45" r="45"/><path class="cls-2" d="M69.51,63.42l-9.74-9.74A2.35,2.35,0,0,0,58.11,53H56.52A20.29,20.29,0,1,0,53,56.52v1.59a2.35,2.35,0,0,0,.68,1.66l9.74,9.74a2.35,2.35,0,0,0,3.31,0l2.77-2.77A2.37,2.37,0,0,0,69.51,63.42ZM40.5,53A12.5,12.5,0,1,1,53,40.5,12.49,12.49,0,0,1,40.5,53Z"/></g></g></svg>'
