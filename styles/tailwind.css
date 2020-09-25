@@ -60,8 +60,10 @@ a.link-white:hover {
   display: none;
 }
 
-.dropdown:hover .sub-menu  {
-  display: block;
+@media (min-width: 768px) {
+    .dropdown:hover .sub-menu  {
+        display: block;
+    }
 }
 
 .contact-form-slider {

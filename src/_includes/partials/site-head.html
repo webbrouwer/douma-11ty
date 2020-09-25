@@ -23,12 +23,12 @@
 
                 {% set navPages = collections.all | eleventyNavigation %}
                 {% macro renderNavListItem(entry) -%}
-                    {%- if entry.children.length -%}<div class="md:dropdown">{%- endif -%}
-                    <a
+                    {%- if entry.children.length -%}<div class="dropdown">{%- endif -%}
+                      <a
                         class="menu-item block px-2 py-1 text-lg font-bold {% if entry.url == page.url %}active {% endif %}"
                         href="{{ entry.url | url }}"
                       >
-                      {{ entry.title }}
+                      {{ entry.title }} </a>
                       {%- if entry.children.length -%}<div class="md:hidden pl-8 inline-block">
                         <button id="mobileSubMenuButton-js" type="button" class="hover:text-orange focus:text-orange">
                             <svg class="h-3 w-3 fill-current text-white" viewBox="0 0 436.69 436.69">
@@ -36,10 +36,13 @@
                                 <path id="submenuOpen-js" class="block" fill-rule="evenodd" d="M258,235.31,63.64,429.66a24,24,0,0,1-33.94,0L7,407a24,24,0,0,1,0-33.9L161,218.34,7,63.6A24,24,0,0,1,7,29.7L29.7,7A24,24,0,0,1,63.64,7L258,201.37a24,24,0,0,1,0,33.94Z"/>
                             </svg>
                         </button>
-                    </div>{%- endif -%}
-                    </a>
+                      </div>
+                        <ul class="hidden mobile-sub-menu pl-8" id="submenu-js">
+                          {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+                        </ul>
+                        {%- endif -%}
                         {%- if entry.children.length -%}
-                          <ul class="absolute sub-menu z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md" id="submenu-js">
+                          <ul class="absolute sub-menu z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md">
                             {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
                           </ul>
                         {%- endif -%}

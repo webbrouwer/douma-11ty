@@ -46,8 +46,8 @@ var submenuClosedIcon = document.querySelector('#submenuClosed-js');
 var submenuOpenIcon = document.querySelector('#submenuOpen-js');
 
 function closeSubMenu() {
-    submenu.classList.remove('sm:block');
-    submenu.classList.add('sm:hidden');
+    submenu.classList.remove('block');
+    submenu.classList.add('hidden');
     submenuOpenIcon.classList.remove('hidden');
     submenuOpenIcon.classList.add('block');
     submenuClosedIcon.classList.remove('block');
@@ -57,8 +57,8 @@ function closeSubMenu() {
 }
 
 function openSubMenu() {
-    submenu.classList.remove('sm:hidden');
-    submenu.classList.add('sm:block');
+    submenu.classList.remove('hidden');
+    submenu.classList.add('block');
     submenuClosedIcon.classList.add('block');
     submenuClosedIcon.classList.remove('hidden');
     submenuOpenIcon.classList.add('hidden');
