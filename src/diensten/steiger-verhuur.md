@@ -16,7 +16,11 @@ eleventyNavigation:
   order: 4
 ---
 
-<h2 class="text-gray"><span class="text-green">Dakdekker</span> in omgeving Arnhem gezocht?</h2>
+<h2 class="text-gray">Extra <span class="text-green">service</span></h2>
+
+<p class="text-gray">Wij monteren, demonteren en verhuren met enthousiaste collega’s in een dynamisch bedrijf. Door onze brede vakkennis en uitgebreide assortiment kunnen wij u optimaal bedienen. Voor meer informatie over steigerverhuur kunt u het beste contact met ons opnemen.</p>
+
+<h3 class="text-gray mt-8"><span class="text-green">Dakdekker</span> in omgeving Arnhem gezocht?</h3>
 
 <p class="text-gray">De dakdekkers van Douma-Dakdekkers kunnen alle werkzaamheden rondom uw dak uitvoeren. Onze specialiteiten:</p>
 
@@ -31,7 +35,3 @@ eleventyNavigation:
 </ul>
 
 <p class="text-gray">Dus heeft u dringend een dakdekker nodig in of nabij Arnhem? Neem dan gelijk contact met ons op. In de meeste gevallen zijn wij binnen 24 uur ter plaatse. Tevens verzorgen wij een gratis dakinspectie. De scherpste tarieven, snel ter plaatse en perfecte kwaliteit, wat wilt u nog meer?</p>
-
-<h3 class="text-gray mt-8">Extra <span class="text-green">service</span></h3>
-
-<p class="text-gray">Wij monteren, demonteren en verhuren met enthousiaste collega’s in een dynamisch bedrijf. Door onze brede vakkennis en uitgebreide assortiment kunnen wij u optimaal bedienen. Voor meer informatie over steigerverhuur kunt u het beste contact met ons opnemen.</p>
