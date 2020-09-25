@@ -39,7 +39,7 @@
                     </div>{%- endif -%}
                     </a>
                         {%- if entry.children.length -%}
-                          <ul class="absolute sub-menu sm:hidden z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md" id="submenu-js">
+                          <ul class="absolute sub-menu z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md" id="submenu-js">
                             {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
                           </ul>
                         {%- endif -%}
