@@ -23,15 +23,23 @@
 
                 {% set navPages = collections.all | eleventyNavigation %}
                 {% macro renderNavListItem(entry) -%}
-                    {%- if entry.children.length -%}<div class="dropdown">{%- endif -%}
+                    {%- if entry.children.length -%}<div class="md:dropdown">{%- endif -%}
                     <a
                         class="menu-item block px-2 py-1 text-lg font-bold {% if entry.url == page.url %}active {% endif %}"
                         href="{{ entry.url | url }}"
                       >
                       {{ entry.title }}
+                      {%- if entry.children.length -%}<div class="md:hidden pl-8 inline-block">
+                        <button id="mobileSubMenuButton-js" type="button" class="hover:text-orange focus:text-orange">
+                            <svg class="h-3 w-3 fill-current text-white" viewBox="0 0 436.69 436.69">
+                                <path id="submenuClosed-js" class="hidden" fill-rule="evenodd" d="M201.37,258,7,63.64A24,24,0,0,1,7,29.7L29.7,7A24,24,0,0,1,63.6,7L218.34,161,373.09,7A24,24,0,0,1,407,7L429.66,29.7a24,24,0,0,1,0,33.94L235.31,258a24,24,0,0,1-33.94,0Z"/>
+                                <path id="submenuOpen-js" class="block" fill-rule="evenodd" d="M258,235.31,63.64,429.66a24,24,0,0,1-33.94,0L7,407a24,24,0,0,1,0-33.9L161,218.34,7,63.6A24,24,0,0,1,7,29.7L29.7,7A24,24,0,0,1,63.64,7L258,201.37a24,24,0,0,1,0,33.94Z"/>
+                            </svg>
+                        </button>
+                    </div>{%- endif -%}
                     </a>
                         {%- if entry.children.length -%}
-                          <ul class="absolute sub-menu z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md">
+                          <ul class="absolute sub-menu sm:hidden z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md" id="submenu-js">
                             {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
                           </ul>
                         {%- endif -%}

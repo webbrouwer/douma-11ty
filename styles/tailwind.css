@@ -52,6 +52,10 @@ a.link-white:hover {
     border-bottom: 2px solid #ea8b34;
 }
 
+.menu-item {
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+
 .sub-menu {
   display: none;
 }

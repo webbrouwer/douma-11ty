@@ -37,6 +37,44 @@ menuButton.addEventListener('click', function(event) {
 }, true);
 
 /*
+ * Open / close mobile submenu
+ */
+var isOpen = false;
+var submenu = document.querySelector('#submenu-js');
+var submenuButton = document.querySelector('#mobileSubMenuButton-js');
+var submenuClosedIcon = document.querySelector('#submenuClosed-js');
+var submenuOpenIcon = document.querySelector('#submenuOpen-js');
+
+function closeSubMenu() {
+    submenu.classList.remove('sm:block');
+    submenu.classList.add('sm:hidden');
+    submenuOpenIcon.classList.remove('hidden');
+    submenuOpenIcon.classList.add('block');
+    submenuClosedIcon.classList.remove('block');
+    submenuClosedIcon.classList.add('hidden');
+
+    isOpen = false;
+}
+
+function openSubMenu() {
+    submenu.classList.remove('sm:hidden');
+    submenu.classList.add('sm:block');
+    submenuClosedIcon.classList.add('block');
+    submenuClosedIcon.classList.remove('hidden');
+    submenuOpenIcon.classList.add('hidden');
+    submenuOpenIcon.classList.remove('block');
+    isOpen = true;
+}
+
+submenuButton.addEventListener('click', function(event) {
+    if(isOpen) {
+        closeSubMenu();
+    } else {
+        openSubMenu();
+    }
+}, true);
+
+/*
  * Swiper slider
  */
 var mySwiper = new Swiper('.swiper-container', {
