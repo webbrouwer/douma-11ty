@@ -31,7 +31,7 @@
                       {{ entry.title }}
                     </a>
                         {%- if entry.children.length -%}
-                          <ul class="absolute sub-menu">
+                          <ul class="absolute sub-menu z-10 p-4 rounded-bl-lg rounded-br-lg bg-gray shadow-md">
                             {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
                           </ul>
                         {%- endif -%}
