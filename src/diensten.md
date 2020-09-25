@@ -9,4 +9,7 @@ hero:
   image: '/images/slider/2.jpg'
   imageAlt: 'Altag image'
 layout: 'layouts/diensten.html'
+eleventyNavigation:
+  key: Diensten
+  order: 2
 ---

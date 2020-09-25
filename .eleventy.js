@@ -6,12 +6,18 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
+// Add navigation plugin
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 module.exports = function (eleventyConfig) {
   // Add filters
   eleventyConfig.addFilter('dateFilter', dateFilter);
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 
   eleventyConfig.addWatchTarget("./_tmp/style.css");
+
+  // Add navigation plugin
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Set directories to pass through to the dist folder
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });

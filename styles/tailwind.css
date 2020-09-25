@@ -39,9 +39,17 @@ a.link:hover {
     @apply bg-orange-dark;
 }
 
-[aria-current="page"],
+.active,
 .menu-item:hover {
     border-bottom: 2px solid #ea8b34;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.dropdown:hover .sub-menu  {
+  display: block;
 }
 
 .contact-form-slider {

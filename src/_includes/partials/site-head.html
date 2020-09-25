@@ -20,23 +20,31 @@
                         </button>
                     </div>
                 </div>
+
+                {% set navPages = collections.all | eleventyNavigation %}
+                {% macro renderNavListItem(entry) -%}
+                    {%- if entry.children.length -%}<div class="dropdown">{%- endif -%}
+                    <a
+                        class="menu-item block px-2 py-1 text-lg font-bold {% if entry.url == page.url %}active {% endif %}"
+                        href="{{ entry.url | url }}"
+                      >
+                      {{ entry.title }}
+                    </a>
+                        {%- if entry.children.length -%}
+                          <ul class="absolute sub-menu">
+                            {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
+                          </ul>
+                        {%- endif -%}
+                    {%- if entry.children.length -%}</div>{%- endif -%}
+                {%- endmacro %}
+
                 <nav
                   id="menu-js"
                   class="hidden px-2 pt-2 pb-4 text-white md:flex md:p-0"
                   aria-label="Primary navigaton"
                 >
-                {% for item in navigation.items %}
-                    <a
-                        class="menu-item block px-2 py-1 text-lg font-bold"
-                        href="{{ item.url }}"
-                        {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
-                      >{{ item.text }}</a>
-                      {% if item.text == 'Diensten' %}
-                        &#x25BE;
-                        sub menu 1
-
-                      {% endif %}
-                {% endfor %}
+                {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
                 </nav>
+
             </div>
         </header>

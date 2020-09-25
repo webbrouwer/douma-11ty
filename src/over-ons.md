@@ -9,6 +9,9 @@ hero:
   image: '/images/slider/1.jpg'
   imageAlt: 'Altag image'
 layout: 'layouts/about.html'
+eleventyNavigation:
+  key: Over ons
+  order: 3
 ---
 
 <h2 class="pb-4"><span class="text-green">Familiebedrijf</span> Douma Dakdekkers</h2>

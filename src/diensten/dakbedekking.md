@@ -10,6 +10,10 @@ button:
 hero:
   image: '/images/slider/1.jpg'
   imageAlt: 'Altag image'
+eleventyNavigation:
+  key: Dakbedekking
+  parent: Diensten
+  order: 1
 ---
 
 <h2><span class="text-green">Dakdekker</span> in omgeving Arnhem gezocht?</h2>
