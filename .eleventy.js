@@ -16,6 +16,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./_tmp/style.css");
 
+  // Add favicon
+  eleventyConfig.addPassthroughCopy('favicon.ico')
+
   // Add navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
