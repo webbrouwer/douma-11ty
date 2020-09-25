@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
 
   // Add favicon
   eleventyConfig.addPassthroughCopy('favicon.ico')
+  eleventyConfig.addPassthroughCopy('./src/images/logo');
 
   // Add navigation plugin
   eleventyConfig.addPlugin(eleventyNavigationPlugin);

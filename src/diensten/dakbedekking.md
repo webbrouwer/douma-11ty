@@ -1,5 +1,5 @@
 ---
-title: 'Dekbedekking'
+title: 'Dakbedekking'
 slug: 'dakbedekking'
 displayOrder: 1
 metaDesc: 'Dakbedekking, uw dakdekker in de regio'
