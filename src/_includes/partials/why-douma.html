@@ -1,5 +1,5 @@
             <article class="md:container md:mx-auto py-4 px-8">
-                <h2 class="text-center"><span class="text-green">Waarom</span> Douma Dakdekkers?</h2>
+                <h2 class="text-center text-gray"><span class="text-green">Waarom</span> Douma Dakdekkers?</h2>
 
                 <div class="container mx-auto mt-4 md:grid md:grid-cols-3 gap-8 text-center">
 
@@ -7,8 +7,8 @@
 
                     <div class="mt-8">
                         {{ item.data.icon | safe }}
-                        <h3>{{ item.data.title }}</h3>
-                        <p>{{ item.data.summary }}</p>
+                        <h3 class="text-gray mt-4">{{ item.data.title }} <span class="text-green"> {{ item.data.titlegreen }} </span> {{ item.data.titletwee }} </h3>
+                        <p class="text-gray text-left mt-4">{{ item.data.summary }}</p>
                     </div>
 
                     {% endfor %}
