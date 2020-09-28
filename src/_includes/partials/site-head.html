@@ -12,7 +12,7 @@
                         </a>
                     </div>
                     <div class="md:hidden">
-                        <button id="mobileMenuButton-js" type="button" class="block hover:text-white focus:text-white">
+                        <button id="mobileMenuButton-js" type="button" class="block hover:text-white focus:text-white focus:outline-none">
                             <svg class="h-8 w-8 fill-current text-orange" viewBox="0 0 24 24">
                                 <path id="menuClosed-js" class="hidden" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
                                 <path id="menuOpen-js" class="block" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
@@ -23,14 +23,14 @@
 
                 {% set navPages = collections.all | eleventyNavigation %}
                 {% macro renderNavListItem(entry) -%}
-                    {%- if entry.children.length -%}<div class="dropdown">{%- endif -%}
+                    {%- if entry.children.length -%}<div class="dropdown relative">{%- endif -%}
                       <a
                         class="menu-item block px-2 py-1 text-lg font-bold {% if entry.url == page.url %}active {% endif %}"
                         href="{{ entry.url | url }}"
                       >
                       {{ entry.title }} </a>
-                      {%- if entry.children.length -%}<div class="md:hidden pl-8 inline-block">
-                        <button id="mobileSubMenuButton-js" type="button" class="hover:text-orange focus:text-orange">
+                      {%- if entry.children.length -%}<div class="md:hidden absolute right-0 top-0">
+                        <button id="mobileSubMenuButton-js" type="button" class="hover:text-orange focus:text-orange focus:outline-none">
                             <svg class="h-3 w-3 fill-current text-white" viewBox="0 0 436.69 436.69">
                                 <path id="submenuClosed-js" class="hidden" fill-rule="evenodd" d="M201.37,258,7,63.64A24,24,0,0,1,7,29.7L29.7,7A24,24,0,0,1,63.6,7L218.34,161,373.09,7A24,24,0,0,1,407,7L429.66,29.7a24,24,0,0,1,0,33.94L235.31,258a24,24,0,0,1-33.94,0Z"/>
                                 <path id="submenuOpen-js" class="block" fill-rule="evenodd" d="M258,235.31,63.64,429.66a24,24,0,0,1-33.94,0L7,407a24,24,0,0,1,0-33.9L161,218.34,7,63.6A24,24,0,0,1,7,29.7L29.7,7A24,24,0,0,1,63.64,7L258,201.37a24,24,0,0,1,0,33.94Z"/>

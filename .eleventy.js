@@ -24,8 +24,8 @@ module.exports = function (eleventyConfig) {
 
   // Set directories to pass through to the dist folder
   eleventyConfig.addPassthroughCopy({ "./_tmp/style.css": "./style.css" });
-  eleventyConfig.addPassthroughCopy('./src/images/*');
-  eleventyConfig.addPassthroughCopy('./src/js/');
+  eleventyConfig.addPassthroughCopy('./src/js/*');
+  eleventyConfig.addPassthroughCopy('./src/images/');
 
   // Swiper slider
   eleventyConfig.addPassthroughCopy({
@@ -46,11 +46,6 @@ module.exports = function (eleventyConfig) {
   // Returns usps, sorted by display order
   eleventyConfig.addCollection('usps', collection => {
     return sortByDisplayOrder(collection.getFilteredByGlob('./src/usps/*.md'));
-  });
-
-  // Returns a collection of blog posts in reverse date order
-  eleventyConfig.addCollection('blog', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
   });
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file

@@ -15,9 +15,11 @@
     <section class="text-gray body-font relative">
         <div class="container mx-auto flex sm:flex-no-wrap flex-wrap pb-12">
             <form class="lg:w-2/5 md:w-1/2 bg-white flex flex-col md:py-8 mt-8 md:mt-0" action="/form-handling.php" method="POST">
+                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                <input type="hidden" name="action" value="validate_captcha">
                 <div class="container mx-auto md:grid md:grid-cols-2 gap-2 py-2">
-                    <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Naam" type="text" name="name">
-                    <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="E-mailadres" type="email" name="email">
+                    <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Naam" type="text" name="name" required>
+                    <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="E-mailadres" type="email" name="email" required>
                     <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Telefoonnummer" type="tel" name="phone">
                     <select class="w-full bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 pl-3 appearance-none" name="service">
                         <option>Kies een dienst</option>
@@ -34,7 +36,7 @@
                         </svg>
                     </span>
                 </div>
-                <textarea class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht" name="comment"></textarea>
+                <textarea class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht" name="comment" required></textarea>
 
                 <button class="btn btn-orange block mt-4 text-center mb-2" type="submit">
                     Verstuur

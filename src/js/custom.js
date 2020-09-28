@@ -1,3 +1,4 @@
+
 /*
  * Open / close mobile menu
  */
@@ -39,7 +40,7 @@ menuButton.addEventListener('click', function(event) {
 /*
  * Open / close mobile submenu
  */
-var isOpen = false;
+var subIsOpen = false;
 var submenu = document.querySelector('#submenu-js');
 var submenuButton = document.querySelector('#mobileSubMenuButton-js');
 var submenuClosedIcon = document.querySelector('#submenuClosed-js');
@@ -53,7 +54,7 @@ function closeSubMenu() {
     submenuClosedIcon.classList.remove('block');
     submenuClosedIcon.classList.add('hidden');
 
-    isOpen = false;
+    subIsOpen = false;
 }
 
 function openSubMenu() {
@@ -63,11 +64,11 @@ function openSubMenu() {
     submenuClosedIcon.classList.remove('hidden');
     submenuOpenIcon.classList.add('hidden');
     submenuOpenIcon.classList.remove('block');
-    isOpen = true;
+    subIsOpen = true;
 }
 
 submenuButton.addEventListener('click', function(event) {
-    if(isOpen) {
+    if(subIsOpen) {
         closeSubMenu();
     } else {
         openSubMenu();
