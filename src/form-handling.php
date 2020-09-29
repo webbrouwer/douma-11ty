@@ -40,16 +40,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $service = test_input($_POST["service"]);
     $comment = test_input($_POST["comment"]);
 
-    // send email
-    mail("mickey@mademarketing.nl", "Nieuwe aanvraag", $message);
-}
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/plain;charset=UTF-8" . "\r\n";
+    $headers .= "From: info@douma-dakdekkers.nl";
 
-$message = 'Naam: ' . $name;
+    // Create admin mail
+    $message = "Nieuwe aanvraag ontvangen van: \n";
+    $message .= "Naam: " . $name . "\n";
+    $message .= "E-mail: " . $email . "\n";
+    $message .= "Tel: " . $phone . "\n";
+    $message .= "Dienst: " . $service . "\n";
+    $message .= "Vraag: \n" . $comment;
+
+    // Send admin mail
+    mail("mickey@mademarketing.nl", "Nieuwe aanvraag", $message, $headers);
+
+    // Create user mail
+    $thankYouMessage = "Beste " . $name . ", \n\n";
+    $thankYouMessage .= "Bedankt voor uw aanvraag. Wij nemen zo spoedig mogelijk contact met u op. Spoed of direct antwoord op uw vraag? Neem contact op met: 06 - 55 88 70 64. \n\n";
+    $thankYouMessage .= "Met vriendelijke groet, \n\n"
+    $thankYouMessage .= "Kas Douma \n";
+    $thankYouMessage .= "Douma Dakdekkers";
+
+    // Send user mail
+    mail($email, "Bedankt voor uw aanvraag!", $thankYouMessage, $headers);
+}
 
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
+
   return $data;
 }
 
