@@ -80,7 +80,7 @@ submenuButton.addEventListener('click', function(event) {
  */
 var mySwiper = new Swiper('.swiper-container', {
     autoplay: {
-        delay: 2500,
+        delay: 6000,
         disableOnInteraction: false,
     },
     navigation: {

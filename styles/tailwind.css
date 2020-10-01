@@ -76,6 +76,8 @@ a.link-white:hover {
 @media (min-width: 768px) {
     .swiper-slide img {
         min-height: 600px;
+        max-height: 600px;
+        object-fit: cover;
     }
 }
 
@@ -109,9 +111,19 @@ a.link-white:hover {
 
 .swiper-button-next,
 .swiper-button-prev {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 30px;
     color: #fff !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 30px !important;
 }
 
 .banner {
