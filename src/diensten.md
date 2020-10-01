@@ -6,8 +6,8 @@ button:
   text: 'Tel: 06 - 55 88 70 64'
   link: 'mailto:+310655887064'
 hero:
-  image: '/images/slider/2.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-bus-met-ladder.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf diensten, bus met ladder'
 layout: 'layouts/diensten.html'
 eleventyNavigation:
   key: Diensten

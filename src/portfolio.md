@@ -6,8 +6,8 @@ button:
   text: 'Contact opnemen'
   link: '/contact/'
 hero:
-  image: '/images/slider/2.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-oud-douma-gebouw-zwart-wit.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf steiger verhuur, douma gebouw oud'
 layout: 'layouts/portfolio.html'
 eleventyNavigation:
   key: Portfolio
