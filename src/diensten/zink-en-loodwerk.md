@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-zinkloodwerk.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-werkplaats-aluminium.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf zink en lood, in werkplaats'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-zink-lood-werk.jpg'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf zink en lood, dak rand'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-werkplaats.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf zink en lood, Kas Douma in werkplaats'
 eleventyNavigation:
   key: Zink en loodwerk
   parent: Diensten

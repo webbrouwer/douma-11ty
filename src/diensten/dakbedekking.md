@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-dakbedekking.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-vlammenwerper.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakbedekking, vlammenwerper'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakbedekking-op-dak.jpg'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakbedekking, plat dak zwart'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-open-dak.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakbedekking, open dak'
 eleventyNavigation:
   key: Dakbedekking
   parent: Diensten

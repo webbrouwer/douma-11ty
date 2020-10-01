@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-dakinspectie.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-mannen-op-dak-lucht.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, mannen op dak'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-plat-dak.png'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, plat dak zwart handschoenen'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakinspectie-ladder.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, man op dak met ladder'
 eleventyNavigation:
   key: Dakinspectie
   parent: Diensten

@@ -6,8 +6,8 @@ button:
   text: 'Tel: 06 - 55 88 70 64'
   link: 'mailto:+310655887064'
 hero:
-  image: '/images/slider/1.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-oude-hijskraan.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf over ons, oude hijskraan'
 layout: 'layouts/about.html'
 eleventyNavigation:
   key: Over ons

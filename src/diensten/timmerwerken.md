@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-timmerwerken.png'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-open-dak.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf timmerwerken, open dak'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-werkplaats-overzicht.jpg'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf timmerwerken, werkplaats overzicht'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-timmerwerken-hout-dak.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf timmerwerken, hout dak'
 eleventyNavigation:
   key: Timmerwerken
   parent: Diensten

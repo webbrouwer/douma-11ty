@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-dakinspectie.jpg'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-steiger-te-huur-zijkant.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf steiger verhuur, steiger te huur zijkant'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-steiger-witte-bus.jpg'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf steiger verhuur, steiger met witte bus'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-steiger-rode-zijkant.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf steiger verhuur, steiger en rood dak'
 eleventyNavigation:
   key: Steiger verhuur
   parent: Diensten

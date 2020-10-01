@@ -58,6 +58,7 @@ a.link-white:hover {
 
 .sub-menu {
   display: none;
+  width: max-content;
 }
 
 @media (min-width: 768px) {
@@ -119,7 +120,7 @@ a.link-white:hover {
 
 .lines-slider {
     position: absolute;
-    z-index: 1000;
+    z-index: 9;
     bottom: -1px;
     left: 0px;
     width: 100%;

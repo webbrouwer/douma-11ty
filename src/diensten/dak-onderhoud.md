@@ -8,8 +8,13 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/diensten/douma-dakdekkers-diensten-dakonderhoud.png'
-  imageAlt: 'Altag image'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-bezem-ingezoomd.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, zand en reling'
+bottom:
+  imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakgoot-bladeren.png'
+  imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, bladeren in dakgoot'
+  imageRight: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakonderhoud-lekkage.jpg'
+  imageRightAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, waterplassen op dak'
 eleventyNavigation:
   key: Dak onderhoud
   parent: Diensten
