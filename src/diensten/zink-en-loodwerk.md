@@ -2,7 +2,7 @@
 title: 'Zink en loodwerk'
 slug: 'zink-en-loodwerk'
 displayOrder: 6
-metaDesc: 'Zink en loodwerk, uw dakdekker in de regio'
+metaDesc: 'Douma Dakdekkers verrichten diversen lood- en zinkwerken van nieuwbouw gebouwen tot en met monumentale gebouwen. Interesse? Neem contact met ons op!'
 summary: 'Wij verrichten diversen lood- en zinkwerken van nieuwbouw gebouwen tot en met monumentale gebouwen. Deze werkzaamheden worden geheel volgens de norm uitgevoerd. Om deze kunde te behouden doen wij de nodige bijscholing en ervaring op.'
 button:
   text: 'Vrijblijvende offerte aanvragen'

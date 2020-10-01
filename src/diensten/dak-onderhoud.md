@@ -2,7 +2,7 @@
 title: 'Dak onderhoud'
 slug: 'dak-onderhoud'
 displayOrder: 2
-metaDesc: 'Dak onderhoud, uw dakdekker in de regio'
+metaDesc: 'Dakonderhoud is nodig om een lange levensduur van uw dak te garanderen. Interesse? Neem contact met ons op!'
 summary: 'Dakonderhoud is nodig om een lange levensduur van uw dak te garanderen. Schade aan het dak kan al in een vroeg stadia verholpen worden waardoor de kans op lekkages en waterschade tot het minimum beperkt wordt.'
 button:
   text: 'Vrijblijvende offerte aanvragen'

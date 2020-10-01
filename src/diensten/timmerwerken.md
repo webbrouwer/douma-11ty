@@ -2,7 +2,7 @@
 title: 'Timmerwerken'
 slug: 'timmerwerken'
 displayOrder: 5
-metaDesc: 'Timmerwerken, uw dakdekker in de regio'
+metaDesc: 'Douma Dakdekkers is ook uw partner in timmerwerken. Interesse? Neem contact met ons op!'
 summary: 'Douma Dakdekkers is ook uw partner in timmerwerken.  In de regio Arnhem, Nijmegen, Utrecht, Amersfoort, Doetichem is Douma voor de meest uiteenlopende bouwklussen uw bedrijf!'
 button:
   text: 'Vrijblijvende offerte aanvragen'

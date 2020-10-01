@@ -2,7 +2,7 @@
 title: 'Dakbedekking'
 slug: 'dakbedekking'
 displayOrder: 1
-metaDesc: 'Dakbedekking, uw dakdekker in de regio'
+metaDesc: 'Bent u op zoek naar een dakdekker in Arnhem en omstreken die de lekkage van uw dak kan repareren? Neem contact met ons op!'
 summary: 'Bent u op zoek naar een dakdekker in Arnhem, Utrecht, Apeldoorn, Doetichem, Nijmegen, Amersfoort of omstreken die de lekkage van uw dak kan repareren, lekkages kan voorkomen of uw dak isoleert? U bent bij Douma-Dakdekkers aan het juiste adres!'
 button:
   text: 'Vrijblijvende offerte aanvragen'

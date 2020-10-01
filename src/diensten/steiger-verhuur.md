@@ -2,7 +2,7 @@
 title: 'Steiger verhuur'
 slug: 'steiger-verhuur'
 displayOrder: 4
-metaDesc: 'Steiger verhuur, uw dakdekker in de regio'
+metaDesc: 'Bij Douma huurt u een veilige en goedgekeurde rolsteiger of kamersteiger. We bezorgen en bouwen indien gewenst de steiger voor u op. Interesse? Neem contact met ons op!'
 summary: 'Steigerverhuur van Douma Dakdekkers specialiseert zich in de verhuur van rolsteigers in de regio Arnhem. Bij ons huurt u een veilige en goedgekeurde rolsteiger of kamersteiger. We bezorgen op een door u aangegeven adres en bouwen indien gewenst de steiger voor u op.'
 button:
   text: 'Vrijblijvende offerte aanvragen'

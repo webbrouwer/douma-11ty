@@ -2,8 +2,8 @@
 title: 'Dakinspectie'
 slug: 'dakinspectie'
 displayOrder: 3
-metaDesc: 'Dakinspectie, uw dakdekker in de regio'
-summary: 'Wanneer u een pand wilt kopen of huren kijkt u natuurlijk naar het aangezicht, hoe zit het in de verf, is het sanitair degelijk. Maar kijkt u ook op het dak ? Want juist een dicht dak boven uw hoofd is essentieel. Ook als u al eigenaar of huurder bent kan dakinspectie van groot belang zijn.'
+metaDesc: 'Juist een dicht dak boven uw hoofd is essentieel. Ook als u al eigenaar of huurder bent kan dakinspectie van groot belang zijn. Interesse? Neem contact met ons op!'
+summary: 'Wanneer u een pand wilt kopen of huren kijkt u natuurlijk naar het aangezicht, hoe zit het in de verf, is het sanitair degelijk. Maar kijkt u ook op het dak? Want juist een dicht dak boven uw hoofd is essentieel. Ook als u al eigenaar of huurder bent kan dakinspectie van groot belang zijn.'
 button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
