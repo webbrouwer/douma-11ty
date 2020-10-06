@@ -27,10 +27,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/js/*');
   eleventyConfig.addPassthroughCopy('./src/images/');
 
-  // Swiper slider
+  // Swiper slider & photoSwipe gallery
   eleventyConfig.addPassthroughCopy({
     "node_modules/swiper/swiper-bundle.min.css": "assets/swiper.min.css",
-    "node_modules/swiper/swiper-bundle.min.js": "assets/swiper.min.js"
+    "node_modules/swiper/swiper-bundle.min.js": "assets/swiper.min.js",
+    "node_modules/photoswipe/dist/photoswipe.css": "assets/photoswipe.css",
+    "node_modules/photoswipe/dist/default-skin/default-skin.css": "assets/default-skin/default-skin.css",
+    "node_modules/photoswipe/dist/photoswipe.min.js": "assets/photoswipe.min.js",
+    "node_modules/photoswipe/dist/photoswipe-ui-default.min.js": "assets/photoswipe-ui-default.min.js"
   });
 
   // Add shortcode for versions

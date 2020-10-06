@@ -14,9 +14,12 @@
         }
     </style>
 
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/logo/favicon.png">
     <link rel="stylesheet" href="/style.css?v={% version %}"/>
     <link rel="stylesheet" href="{{ '/assets/swiper.min.css' | url }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/logo/favicon.png">
+
+    <link rel="stylesheet" href="{{ '/assets/photoswipe.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/default-skin/default-skin.css' | url }}">
   </head>
   <body>
     {% include "partials/site-head.html" %}
@@ -27,11 +30,16 @@
 
     {% include "partials/footer.html" %}
 
-    <!-- swiper.js -->
-    <script src="{{ '/assets/swiper.min.js' | url }}"></script>
+    <!-- swiper -->
+    <script type="text/javascript" src="{{ '/assets/swiper.min.js' | url }}" defer></script>
+
+    <!-- photeSwipe -->
+    <script type="text/javascript" src="{{ '/assets/photoswipe.min.js' | url }}" defer></script>
+    <script type="text/javascript" src="{{ '/assets/photoswipe-ui-default.min.js' | url }}" defer></script>
+    <script type="text/javascript" src="/js/photoswipe.js" defer></script>
 
     <!-- custom.js -->
-    <script type="text/javascript" src="/js/custom.js"></script>
+    <script type="text/javascript" src="/js/custom.js" defer></script>
 
     <!-- Google recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LcGoMUZAAAAAILPx-cktiBGrn0I1CQAtqwbdFYr"></script>
