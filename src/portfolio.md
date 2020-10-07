@@ -1,7 +1,7 @@
 ---
 title: 'Portfolio'
 summary: 'Een foto overzicht van onze projecten.'
-metaDesc: 'Portfolio van Douma Dakdekkers'
+metaDesc: 'Het familiebedrijf Douma kent een historie van bijna 86 jaar. Er is dus een enorm portfolio opgebouwd in die tijd. Meer weten? Neem contact met ons op!'
 button:
   text: 'Contact opnemen'
   link: '/contact/'

@@ -1,7 +1,7 @@
 ---
 title: 'Over ons'
 summary: 'Een dakdekkersbedrijf met een mooie geschiedenis!'
-metaDesc: 'Diensten van Douma Dakdekker - Uw dakdekker in de regio Arnhem'
+metaDesc: 'Een dakdekkersbedrijf met een mooie geschiedenis! Het familiebedrijf Douma kent een historie van bijna 86 jaar. Meer weten? Neem contact met ons op!'
 button:
   text: 'Tel: 06 - 55 88 70 64'
   link: 'mailto:+310655887064'
