@@ -288,6 +288,6 @@
         }
     };
 
-    initPhotoSwipeFromDOM('.demo-gallery');
+    initPhotoSwipeFromDOM('.douma-gallery');
 
 })();
