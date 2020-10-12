@@ -10,7 +10,7 @@ if (!$captcha) {
   header('Location: /contact/');
   exit;
 } else {
-    $secret   = 'Your secret key here';
+    $secret   = '6LcGoMUZAAAAAO1_BYcR5ODRjad9Ekl2h1W9k2Cf';
     $response = file_get_contents(
         "https://www.google.com/recaptcha/api/siteverify?secret=" . $secret . "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']
     );
