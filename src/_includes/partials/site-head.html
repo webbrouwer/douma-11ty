@@ -1,6 +1,6 @@
 <!-- <a class="" href="#main-content">Direct naar inhoud</a> -->
 
-        <header>
+        <header itemscope itemtype="https://schema.org/Organization">
 
           {% include "partials/top-header.html" %}
 
@@ -8,7 +8,7 @@
                 <div class="flex items-center justify-between bg-gray px-4 py-3 md:p-0">
                     <div class="">
                         <a href="/" aria-label="{{ site.name }} - home">
-                            <img class="h-12" src="{{ site.logo }}" alt="logo">
+                            <img itemprop="logo" class="h-12" src="{{ site.logo }}" alt="logo">
                         </a>
                     </div>
                     <div class="md:hidden">
@@ -27,6 +27,7 @@
                       <a
                         class="menu-item block px-2 py-1 text-lg font-bold {% if entry.url == page.url %}active {% endif %}"
                         href="{{ entry.url | url }}"
+                        itemprop="url"
                       >
                       {{ entry.title }} </a>
                       {%- if entry.children.length -%}<div class="md:hidden absolute right-0 top-0">
@@ -53,6 +54,7 @@
                   id="menu-js"
                   class="hidden px-2 pt-2 pb-4 text-white md:flex md:p-0"
                   aria-label="Primary navigaton"
+                  itemscope itemtype="https://schema.org/SiteNavigationElement"
                 >
                 {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
                 </nav>

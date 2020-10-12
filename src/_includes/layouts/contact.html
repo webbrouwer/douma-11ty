@@ -5,7 +5,7 @@
 {% include "partials/page-header.html" %}
 {% include "partials/page-intro.html" %}
 
-<article class="container mx-auto mt-4 md:grid py-4 px-8">
+<article itemscope itemtype="https://schema.org/contactPage" class="container mx-auto mt-4 md:grid py-4 px-8">
     <div class="grid py-8">
         <div class="md:w-2/3">
             <h2 class="pb-4 text-gray"><span class="text-green">Stuur</span> ons een bericht</h2>
@@ -47,17 +47,17 @@
                 <div class="w-full bg-gray relative flex flex-wrap py-6">
                     <div class="lg:w-1/2 px-6">
                         <h3 class="text-white"><span class="text-green">Contact</span> Informatie</h3>
-                        <div class="text-white">
+                        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="text-white">
                             <p class="mt-2">Kas Douma</p>
-                            <p class="mt-2">Brederode 32<br>
-                                6922BM, Duiven</p>
+                            <p class="mt-2"><span itemprop="streetAddress">Brederode 32</span><br>
+                                <span itemprop="postalCode">6922BM</span>, <span itemprop="addressLocality">Duiven</span></p>
                         </div>
                     </div>
                     <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
                         <h2 class="title-font text-white text-sm">Tel:</h2>
-                        <p><a class="link" href="06-55887064">06-55887064</a></p>
+                        <p><a itemprop="telephone" class="link" href="tel:+31655887064">06-55887064</a></p>
                         <h2 class="title-font text-white text-sm mt-4">E-mail:</h2>
-                        <p><a class="link" href="info@douma-dakdekkers.nl">info@douma-dakdekkers.nl</a></p>
+                        <p><a itemprop="email" class="link" href="mailto:info@douma-dakdekkers.nl">info@douma-dakdekkers.nl</a></p>
                     </div>
                 </div>
             </div>
