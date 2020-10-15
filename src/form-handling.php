@@ -7,7 +7,8 @@ if (isset($_POST['g-recaptcha-response'])) {
 }
 
 if (!$captcha) {
-  header('Location: /contact/');
+  // Feedback that captcha is not set
+  header('Location: /failed/');
   exit;
 } else {
     $secret   = '6LcGoMUZAAAAAO1_BYcR5ODRjad9Ekl2h1W9k2Cf';
@@ -18,7 +19,8 @@ if (!$captcha) {
     $response = json_decode($response);
 
     if ($response->success === false) {
-      header('Location: /contact/');
+      // Feedback form sending failed
+      header('Location: /failed/');
       exit;
     }
 }
@@ -26,7 +28,8 @@ if (!$captcha) {
 //... The Captcha is valid you can continue with the rest of your code
 //... Add code to filter access using $response . score
 if ($response->success==true && $response->score <= 0.5) {
-  header('Location: /contact/');
+  // Feedback form sending failed
+  header('Location: /failed/');
   exit;
 }
 
@@ -59,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Create user mail
     $thankYouMessage = "Beste " . $name . ", \n\n";
     $thankYouMessage .= "Bedankt voor uw aanvraag. Wij nemen zo spoedig mogelijk contact met u op. Spoed of direct antwoord op uw vraag? Neem contact op met: 06 - 55 88 70 64. \n\n";
-    $thankYouMessage .= "Met vriendelijke groet, \n\n"
+    $thankYouMessage .= "Met vriendelijke groet, \n\n";
     $thankYouMessage .= "Kas Douma \n";
     $thankYouMessage .= "Douma Dakdekkers";
 
