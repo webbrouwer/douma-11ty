@@ -164,5 +164,9 @@ a.link-white:hover {
     transition: 0.5s;
 }
 
+.banner-height {
+    height: 400px;
+}
+
 @tailwind components;
 @tailwind utilities;
