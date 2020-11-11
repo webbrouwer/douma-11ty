@@ -8,8 +8,8 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-mannen-op-dak-lucht.jpg'
-  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, mannen op dak'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-arnhem-dak-oud-ladder-man.png'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, mannen op dak met ladder oude foto'
 bottom:
   imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-plat-dak.png'
   imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dakinspectie, plat dak zwart handschoenen'

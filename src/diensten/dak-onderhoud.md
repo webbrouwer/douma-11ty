@@ -8,8 +8,8 @@ button:
   text: 'Vrijblijvende offerte aanvragen'
   link: '/contact/'
 hero:
-  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-bezem-ingezoomd.jpg'
-  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, zand en reling'
+  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakonderhoud-lekkage.jpg'
+  imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, waterplassen op dak'
 bottom:
   imageLeft: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-dakgoot-bladeren.png'
   imageLeftAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf dak onderhoud, bladeren in dakgoot'
