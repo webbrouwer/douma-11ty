@@ -164,9 +164,19 @@ a.link-white:hover {
     transition: 0.5s;
 }
 
+.hover-zoom-v2:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.hover-zoom-v2 {
+    transition: 0.5s;
+}
+
 .banner-height {
     height: 400px;
 }
+
 
 .z-index-99 {
     z-index: 9999999;
