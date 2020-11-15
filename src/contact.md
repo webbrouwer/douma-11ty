@@ -6,7 +6,7 @@ button:
   text: 'Tel: 06 - 55 88 70 64'
   link: 'tel:+310655887064'
 hero:
-  image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-arnhem-dak-contact-v2.png'
+  image: '/images/img/contact-kas-douma-dakdekkers-dakreparatie-dakonderhoud.jpeg'
   imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf neem contact met ons op'
 layout: 'layouts/contact.html'
 eleventyNavigation:

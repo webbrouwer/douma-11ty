@@ -13,11 +13,12 @@
         </div>
     </div>
     <section class="text-gray body-font relative">
-        <div class="container mx-auto flex sm:flex-no-wrap flex-wrap pb-12">
-            <form class="lg:w-2/5 md:w-1/2 bg-white flex flex-col md:py-8 mt-8 md:mt-0" action="/form-handling.php" method="POST">
-                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+        <div class="container mx-auto sm:flex sm:flex-no-wrap flex-wrap pb-12">
+
+            <form class="mb-4 md:mt-0" action="/form-handling.php" method="POST">
+                <input type="hidden" id="g-recptcha-response" name="g-recaptcha-response">
                 <input type="hidden" name="action" value="validate_captcha">
-                <div class="container mx-auto md:grid md:grid-cols-2 gap-2 py-2">
+                <div class="container mx-auto grid md:grid-cols-2 gap-2 py-2">
                     <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Naam" type="text" name="name" required>
                     <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="E-mailadres" type="email" name="email" required>
                     <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Telefoonnummer" type="tel" name="phone">
@@ -30,32 +31,28 @@
                         <option>Timmerwerken</option>
                         <option>Zink- en Loodwerk</option>
                     </select>
-                    <span class="absolute right-0 top-0 h-10 w-10 text-center pointer-events-none flex items-center justify-center">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
-                        <path d="M6 9l6 6 6-6"></path>
-                        </svg>
-                    </span>
                 </div>
-                <textarea class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht" name="comment" required></textarea>
-
-                <button class="btn btn-orange block mt-4 text-center mb-2" type="submit">
+                <textarea class="w-full bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht" name="comment" required></textarea>
+            
+                <button class="btn btn-orange block text-center mb-2" type="submit">
                     Verstuur
                 </button>
-            </form>
+            </form>            
+
             <div class="shadow-box lg:w-3/5 md:w-1/2 bg-gray rounded-tl-lg rounded-br-lg overflow-hidden sm:ml-8 flex items-end justify-start relative">
-                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.755826410972!2d6.009024215510063!3d51.93840718691907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a19dc04209fb%3A0x3e272ed1c5ebe337!2sBrederode%2032%2C%206922%20BM%20Duiven!5e0!3m2!1snl!2snl!4v1600343756591!5m2!1snl!2snl" style="filter: grayscale(0) contrast(1) opacity(1);"></iframe>
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9830.792525415349!2d5.921615!3d51.975928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x56d56f806cf4a85f!2sKas%20Douma%20Dakdekkers%20in%20regio%20Arnhem!5e0!3m2!1sen!2snl!4v1605451791244!5m2!1sen!2snl" style="filter: grayscale(0) contrast(1) opacity(1);"></iframe>
                 <div class="w-full bg-gray relative flex flex-wrap py-6">
                     <div class="lg:w-1/2 px-6">
-                        <h3 class="text-white"><span class="text-green">Contact</span> Informatie</h3>
                         <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="text-white">
-                            <p class="mt-2">Kas Douma</p>
-                            <p class="mt-2"><span itemprop="streetAddress">Brederode 32</span><br>
-                                <span itemprop="postalCode">6922BM</span>, <span itemprop="addressLocality">Duiven</span></p>
+                            <h3 class="text-white"><span class="text-green">Contact</span> Informatie</h3>
+                            <p class="mt-2">Kas Douma Dakdekkers</p>
+                            <p class="mt-2"><span itemprop="streetAddress">Van Oldenbarneveldtstraat 85a</span><br>
+                                <span itemprop="postalCode">6868 ZR</span>, <span itemprop="addressLocality">Arnhem</span></p>
                         </div>
                     </div>
                     <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
                         <h2 class="title-font text-white text-sm">Tel:</h2>
-                        <p><a itemprop="telephone" class="link" href="tel:+31655887064">06-55887064</a></p>
+                        <p><a itemprop="telephone" class="link" href="tel:+31655887064">06 - 55 88 70 64</a></p>
                         <h2 class="title-font text-white text-sm mt-4">E-mail:</h2>
                         <p><a itemprop="email" class="link" href="mailto:info@douma-dakdekkers.nl">info@douma-dakdekkers.nl</a></p>
                     </div>

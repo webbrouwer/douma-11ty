@@ -1,5 +1,9 @@
 @tailwind base;
 
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+
 body {
     opacity: 1;
 }
@@ -177,11 +181,9 @@ a.link-white:hover {
     height: 400px;
 }
 
-
 .z-index-99 {
     z-index: 9999999;
 }
-
 
 @tailwind components;
 @tailwind utilities;

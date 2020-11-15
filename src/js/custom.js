@@ -79,6 +79,7 @@ submenuButton.addEventListener('click', function(event) {
  * Swiper slider
  */
 var mySwiper = new Swiper('.swiper-container', {
+    autoHeight: true,    
     autoplay: {
         delay: 6000,
         disableOnInteraction: false,
