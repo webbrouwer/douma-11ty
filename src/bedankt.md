@@ -6,7 +6,7 @@ button:
   text: 'Spoed? Bel direct: 06 - 55 88 70 64'
   link: 'tel:+310655887064'
 hero:
-  image: '/images/slider/2.jpg'
+  image: '/images/img/contact-kas-douma-dakdekkers-dakreparatie-dakonderhoud.jpeg'
   imageAlt: 'Altag image'
 layout: 'layouts/bedankt.html'
 ---
