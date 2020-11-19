@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if (isset($_POST['g-recaptcha-response'])) {
     $captcha = $_POST['g-recaptcha-response'];
 } else {
@@ -8,7 +10,7 @@ if (isset($_POST['g-recaptcha-response'])) {
 
 if (!$captcha) {
   // Feedback that captcha is not set
-  header('Location: /failed/');
+  header('Location: /versturen-mislukt/');
   exit;
 } else {
     $secret   = '6LcGoMUZAAAAAO1_BYcR5ODRjad9Ekl2h1W9k2Cf';
@@ -20,7 +22,7 @@ if (!$captcha) {
 
     if ($response->success === false) {
       // Feedback form sending failed
-      header('Location: /failed/');
+      header('Location: /versturen-mislukt/');
       exit;
     }
 }
@@ -29,7 +31,13 @@ if (!$captcha) {
 //... Add code to filter access using $response . score
 if ($response->success==true && $response->score <= 0.5) {
   // Feedback form sending failed
-  header('Location: /failed/');
+  $_SESSION["name"] = test_input($_POST["name"]);
+  $_SESSION["email"] = $email = test_input($_POST["email"]);
+  $_SESSION["phone"] = $phone = test_input($_POST["phone"]);
+  $_SESSION["service"] = $service = test_input($_POST["service"]);
+  $_SESSION["comment"] = $comment = test_input($_POST["comment"]);
+
+  header('Location: /versturen-mislukt/');
   exit;
 }
 
@@ -78,4 +86,5 @@ function test_input($data) {
   return $data;
 }
 
-header('Location: /bedankt/index.html');
+session_unset(); 
+header('Location: /bedankt/');
