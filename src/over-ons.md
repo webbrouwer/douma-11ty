@@ -4,7 +4,7 @@ summary: 'Een dakdekkersbedrijf met een mooie geschiedenis!'
 metaDesc: 'Een dakdekkersbedrijf met een mooie geschiedenis! Het familiebedrijf Douma kent een historie van bijna 86 jaar. Meer weten? Neem contact met ons op!'
 button:
   text: 'Tel: 06 - 55 88 70 64'
-  link: 'mailto:+310655887064'
+  link: 'tel:+310655887064'
 hero:
   image: '/images/img/kas-douma-dakbedekking-onderhoudsbedrijf-arnhem-home-slider-alle-bussen-v2.png'
   imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf over ons, alle douma bussen parkeerplaats'

@@ -1,0 +1,43 @@
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Redirect 301 /overons/ /over-ons/
+Redirect 301 /diensten/dakonderhoud/ /diensten/dak-onderhoud/
+Redirect 301 /diensten/steigerverhuur/ /diensten/steiger-verhuur/
+Redirect 301 /diensten/zinkenlood/ /diensten/zink-en-lood/
+Redirect 301 /fotoalbum/ /portfolio/
+Redirect 301 /blog/ /
+Redirect 301 /dakgoot-ontstoppen-reinigen/ /diensten/dak-onderhoud/
+Redirect 301 /schoorsteenrenovatie/ /diensten/
+
+ErrorDocument 404 /404.html
+
+# Compress HTML, CSS, JavaScript, Text, XML and fonts
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+
+# Remove browser bugs (only needed for really old browsers)
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4.0[678] no-gzip
+BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
