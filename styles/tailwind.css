@@ -1,5 +1,18 @@
 @tailwind base;
 
+/**
+ * Form Validation Errors
+ */
+ .error {
+	border-color: red;
+}
+
+.error-message {
+	color: red;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
 .grecaptcha-badge { 
     visibility: hidden;
 }

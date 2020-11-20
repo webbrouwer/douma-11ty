@@ -35,7 +35,8 @@ module.exports = function (eleventyConfig) {
     "node_modules/photoswipe/dist/default-skin/default-skin.css": "assets/default-skin/default-skin.css",
     "node_modules/photoswipe/dist/photoswipe.min.js": "assets/photoswipe.min.js",
     "node_modules/photoswipe/dist/photoswipe-ui-default.min.js": "assets/photoswipe-ui-default.min.js",
-    "node_modules/photoswipe/dist/default-skin/default-skin.svg": "assets/default-skin/default-skin.svg"
+    "node_modules/formbouncerjs/dist/bouncer.min.js": "assets/bouncer.min.js",
+    "node_modules/formbouncerjs/dist/bouncer.polyfills.min.js": "assets/bouncer.polyfills.min.js",
   });
 
   // Add shortcode for versions

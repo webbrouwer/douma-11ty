@@ -16,34 +16,8 @@
                         </a>                        
                     </div>
 
-                    <div class="">
-                        <h2><span class="text-green">Contact</span> opnemen</h2>
-                        <span class="text-gray italic">Offertes zijn inclusief gratis dakinspectie.</span>
-                        <form class="mt-2 md:mt-0" action="/form-handling.php" method="POST">
-                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                            <input type="hidden" name="action" value="validate_captcha">
-                            <div class="container mx-auto grid md:grid-cols-2 gap-2 py-2">
-                                <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Naam" type="text" name="name" required>
-                                <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="E-mailadres" type="email" name="email" required>
-                                <input class="bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4" placeholder="Telefoonnummer" type="tel" name="phone">
-                                <select class="w-full bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 pl-3 appearance-none" name="service">
-                                    <option>Kies een dienst</option>
-                                    <option>Dakbedekking</option>
-                                    <option>Dakinspectie</option>
-                                    <option>Dak Onderhoud</option>
-                                    <option>Stijger Verhuur</option>
-                                    <option>Timmerwerken</option>
-                                    <option>Zink- en Loodwerk</option>
-                                </select>
-                            </div>
-                            <textarea class="w-full bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht" name="comment" required></textarea>
-                        
-                            <button class="btn btn-orange block text-center mb-2 w-full" type="submit">
-                                Verstuur
-                            </button>
-                        </form>
-                    </div>                    
-                </div>
+                    {% include "partials/form.html" %}
+                </div> <!-- end row -->
 
                 <div class="md:grid md:grid-cols-1 lg:grid-cols-3 gap-8 items-top justify-between py-8">
                     <div class="p-8 mt-4 bg-gray text-white rounded-tl-lg rounded-br-lg shadow-box hover-zoom">
@@ -56,7 +30,7 @@
                     </div>
                     <div class="md:mt:0 mt-4 p-8 bg-gray text-white rounded-tl-lg rounded-br-lg shadow-box hover-zoom">
                         <h3><span class="text-green">Gratis</span> inspectie</h3>
-                        <p class="mt-4">Wanneer u een pand wilt kopen of huren kijkt u natuurlijk naar het aangezicht, hoe zit het in de verf, is het sanitair degelijk. Maar kijkt u ook op het dak ? Want juist een dicht dak boven uw hoofd is essentieel. Ook als u al eigenaar of huurder bent kan dakinspectie van groot belang zijn. Door het laten uitvoeren van een dakinspectie door Douma Dakdekkers  krijgt u inzicht in de kwaliteit van de dakbedekking en de waterhuishouding.</p>
+                        <p class="mt-4">Wanneer u een pand wilt kopen of huren kijkt u natuurlijk naar het aangezicht, hoe zit het in de verf, is het sanitair degelijk. Maar kijkt u ook op het dak ? Want juist een dicht dak boven uw hoofd is essentieel.Ook als u al eigenaar of huurder bent kan dakinspectie van groot belang zijn. Door het laten uitvoeren van een dakinspectie door Douma Dakdekkers  krijgt u inzicht in de kwaliteit van de dakbedekking en de waterhuishouding.</p>
                     </div>
                 </div>
             </article>
