@@ -6,7 +6,7 @@ button:
   text: 'Vragen? Neem contact op'
   link: '/contact/'
 hero:
-  image: '/images/img/kas-douma-dakbedekking-dakonderhoud-dakreparaties-arnhem.jpg'
+  image: '/images/slider/douma-dakdekkers-dakreparatie-arnhem.jpeg'
   imageAlt: 'Kas Douma Dakbedekking en Onderhoudsbedrijf steiger verhuur, douma gebouw oud'
 layout: 'layouts/portfolio.html'
 eleventyNavigation:
