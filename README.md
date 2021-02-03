@@ -31,9 +31,3 @@ npm run build
 ```
 npm run start
 ```
-
-## TODO
-
-- [ ] create layout for images gallery on portfolio
-- [ ] insert images in corrects sizes in portfolio gallery
-- [ ] refactor photoswipe
