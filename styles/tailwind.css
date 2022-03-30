@@ -1,5 +1,30 @@
 @tailwind base;
 
+.slider-text {
+    z-index: 9999;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;    
+    text-align: center;  
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);    
+}
+
+.slider-button {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;    
+    text-align: center;
+    width: 200px;
+}
+
 /**
  * Form Validation Errors
  */
@@ -95,6 +120,13 @@ a.link-white:hover {
         min-height: 600px;
         max-height: 600px;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-button,
+    .slider-text {
+        display: none;
     }
 }
 
