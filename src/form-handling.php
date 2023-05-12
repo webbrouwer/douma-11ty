@@ -34,7 +34,6 @@ if ($response->success==true && $response->score <= 0.5) {
   $_SESSION["name"] = test_input($_POST["name"]);
   $_SESSION["email"] = $email = test_input($_POST["email"]);
   $_SESSION["phone"] = $phone = test_input($_POST["phone"]);
-  $_SESSION["service"] = $service = test_input($_POST["service"]);
   $_SESSION["comment"] = $comment = test_input($_POST["comment"]);
 
   header('Location: /versturen-mislukt/');
@@ -42,13 +41,12 @@ if ($response->success==true && $response->score <= 0.5) {
 }
 
 // define variables and set to empty values
-$name = $email = $phone = $service = $comment = "";
+$name = $email = $phone = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     $email = test_input($_POST["email"]);
     $phone = test_input($_POST["phone"]);
-    $service = test_input($_POST["service"]);
     $comment = test_input($_POST["comment"]);
 
     // Always set content-type when sending HTML email
@@ -61,11 +59,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Naam: " . $name . "\n";
     $message .= "E-mail: " . $email . "\n";
     $message .= "Tel: " . $phone . "\n";
-    $message .= "Dienst: " . $service . "\n";
     $message .= "Vraag: \n" . $comment;
 
     // Send admin mail
-    mail("mickey@mademarketing.nl", "Nieuwe aanvraag", $message, $headers);
+    mail("info@douma-dakdekkers.nl", "Nieuwe aanvraag", $message, $headers);
 
     // Create user mail
     $thankYouMessage = "Beste " . $name . ", \n\n";
@@ -86,5 +83,5 @@ function test_input($data) {
   return $data;
 }
 
-session_unset(); 
+session_unset();
 header('Location: /bedankt/');
