@@ -34,6 +34,9 @@ if ($response->success==true && $response->score <= 0.5) {
   $_SESSION["name"] = test_input($_POST["name"]);
   $_SESSION["email"] = $email = test_input($_POST["email"]);
   $_SESSION["phone"] = $phone = test_input($_POST["phone"]);
+  $_SESSION["street"] = $street = test_input($_POST["street"]);
+  $_SESSION["housenumber"] = $housenumber = test_input($_POST["housenumber"]);
+  $_SESSION["city"] = $city = test_input($_POST["city"]);
   $_SESSION["comment"] = $comment = test_input($_POST["comment"]);
 
   header('Location: /versturen-mislukt/');
@@ -41,12 +44,15 @@ if ($response->success==true && $response->score <= 0.5) {
 }
 
 // define variables and set to empty values
-$name = $email = $phone = $comment = "";
+$name = $email = $phone = $street = $housenumber = $city = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
     $email = test_input($_POST["email"]);
     $phone = test_input($_POST["phone"]);
+    $street = test_input($_POST["street"]);
+    $housenumber = test_input($_POST["housenumber"]);
+    $city = test_input($_POST["city"]);    
     $comment = test_input($_POST["comment"]);
 
     // Always set content-type when sending HTML email
@@ -55,18 +61,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "From: info@douma-dakdekkers.nl";
 
     // Create admin mail
-    $message = "Nieuwe aanvraag ontvangen van: \n";
+    $message = "Nieuwe aanvraag ontvangen van: \n\n";
     $message .= "Naam: " . $name . "\n";
     $message .= "E-mail: " . $email . "\n";
     $message .= "Tel: " . $phone . "\n";
-    $message .= "Vraag: \n" . $comment;
+    $message .= "Adres: " . $street . " " . $housenumber . "\n";
+    $message .= "Plaats: " . $city . "\n";
+    $message .= "Vraag: \n\n" . $comment;
 
     // Send admin mail
     mail("info@douma-dakdekkers.nl", "Nieuwe aanvraag", $message, $headers);
 
     // Create user mail
     $thankYouMessage = "Beste " . $name . ", \n\n";
-    $thankYouMessage .= "Bedankt voor uw aanvraag. Wij nemen zo spoedig mogelijk contact met u op. Spoed of direct antwoord op uw vraag? Neem contact op met: 06 - 55 88 70 64. \n\n";
+    $thankYouMessage .= "Bedankt voor uw aanvraag. Wij nemen zo spoedig mogelijk contact met u op.\n Spoed of direct antwoord op uw vraag? Neem contact op met: 06 - 55 88 70 64. \n\n";
     $thankYouMessage .= "Met vriendelijke groet, \n\n";
     $thankYouMessage .= "Kas Douma \n";
     $thankYouMessage .= "Douma Dakdekkers";

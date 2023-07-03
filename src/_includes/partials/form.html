@@ -13,8 +13,19 @@
                 </div>
             </div>
             <div>
-                <input class="bg-lightgray placeholder-gray rounded focus:border-gray text-base px-4 py-2 mb-4 w-full" placeholder="Telefoonnummer" type="tel" name="phone">
-            </div>            
+                <input class="bg-lightgray placeholder-gray rounded focus:border-gray text-base px-4 py-2 mb-4 w-full" placeholder="Telefoonnummer *" type="tel" name="phone" required>
+            </div>
+            <div class="container mx-auto grid md:grid-cols-2 gap-2 py-2">
+                <div>
+                    <input class="bg-lightgray placeholder-gray rounded focus:border-gray text-base px-4 py-2 mb-4 w-full" placeholder="Straat *" type="text" name="street" required>
+                </div>
+                <div>
+                    <input class="bg-lightgray placeholder-gray rounded focus:border-gray text-base px-4 py-2 mb-4 w-full" placeholder="Huisnummer *" type="text" name="housenumber" required>
+                </div>
+            </div>
+            <div>
+                <input class="bg-lightgray placeholder-gray rounded focus:border-gray text-base px-4 py-2 mb-4 w-full" placeholder="Plaats *" type="text" name="city" required>
+            </div>                                    
             <textarea class="w-full bg-lightgray placeholder-gray rounded focus:outline-none focus:border-gray text-base px-4 py-2 mb-4 h-32" placeholder="Uw bericht *" name="comment" required></textarea>
         
             <button class="btn btn-orange block text-center mb-2 w-full" type="submit">
