@@ -3,7 +3,7 @@
 .slider-text {
     z-index: 9999;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -16,7 +16,7 @@
 .slider-button {
     z-index: 9999;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 0;
     right: 0;
     margin-left: auto;
